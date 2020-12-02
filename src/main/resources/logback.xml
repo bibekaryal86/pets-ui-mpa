@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xml>
+<configuration debug="true">
+	<if condition='property("LOG_CONFIG").contains("development")'>
+		<then>
+			<property name="LOG_FILE_DEV" value="/JAVA/logs/pets-ui-mpa/pets-ui-mpa"/>
+			<appender name="APPLOG-${LOG_CONFIG}" class="ch.qos.logback.core.rolling.RollingFileAppender">
+				<file>${LOG_FILE_DEV}.log</file>
+				<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+					<FileNamePattern>${LOG_FILE_DEV}_%d{yyyy-MM-dd}_%i.log</FileNamePattern>
+					<maxHistory>14</maxHistory>
+					<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+						<maxFileSize>10MB</maxFileSize>
+					</timeBasedFileNamingAndTriggeringPolicy>
+				</rollingPolicy>
+				<encoder>
+					<pattern>%d{yyyy-MM-dd'T'HH:mm:ss.SSSZ} [%thread][%X{remoteHost}] %-5level %c{1} - %msg%n</pattern>
+				</encoder>
+			</appender>
+		</then>
+	</if>
+	
+	<if condition='property("LOG_CONFIG").contains("gcp")'>
+		<then>
+			<appender name="APPLOG-${LOG_CONFIG}" class="com.google.cloud.logging.logback.LoggingAppender">
+				<log>pets-ui-mpa.log</log>
+				<encoder>
+					<pattern>%d{yyyy-MM-dd'T'HH:mm:ss.SSSZ} [%thread] [%X{remoteHost}] %-5level %c{1} - %msg%n</pattern>
+				</encoder>
+			</appender>
+		</then>
+	</if>
+	
+	<if condition='property("LOG_CONFIG").contains("aws")'>
+		<then>
+			<property name="LOG_FILE_AWS" value="/var/log/tomcat/pets-ui-mpa"/>
+			<appender name="APPLOG-${LOG_CONFIG}" class="ch.qos.logback.core.rolling.RollingFileAppender">
+				<file>${LOG_FILE_AWS}.log</file>
+				<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+					<FileNamePattern>${LOG_FILE_AWS}_%d{yyyy-MM-dd}_%i.log</FileNamePattern>
+					<maxHistory>14</maxHistory>
+					<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+						<maxFileSize>10MB</maxFileSize>
+					</timeBasedFileNamingAndTriggeringPolicy>
+				</rollingPolicy>
+				<encoder>
+					<pattern>%d{yyyy-MM-dd'T'HH:mm:ss.SSSZ} [%thread] [%X{remoteHost}] %-5level %c{1} - %msg%n</pattern>
+				</encoder>
+			</appender>
+		</then>
+	</if>
+	
+	<root level="INFO">
+		<appender-ref ref="APPLOG-${LOG_CONFIG}" />
+	</root>
+</configuration>

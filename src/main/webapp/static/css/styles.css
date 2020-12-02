@@ -1,0 +1,154 @@
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.875em !important;
+	margin-left: 5;
+	margin-right:5;
+	margin-top: 5;
+	padding: 0;
+}
+
+/*h1 {font-size:2.5em}  40px/16=2.5em */
+/*h2 {font-size:1.875em}  30px/16=1.875em */
+/*p {font-size:0.875em}  14px/16=0.875em */
+a:link {
+	color: #33c
+} /* unvisited link */
+a:visited {
+	color: #33c
+} /* visited link */
+a:hover {
+	color: #c90
+} /* mouse over link */
+a:active {
+	color: #33c
+} /* selected link */
+a {
+	text-decoration: none
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0 0 10px 3px;
+}
+
+p, table {
+	font-size: 0.925em !important;
+}
+
+table, form, select {
+	padding: 0;
+	margin: 0;
+}
+
+table tr {
+	padding: 0;
+}
+
+table th, td {
+	vertical-align: top;
+}
+
+table.pets {
+	border: 1px solid #999;
+	margin: 20px 0 20px 0 !important;
+}
+
+table.pets th, table.pets td {
+	padding: 2px 4px 2px 4px !important;
+	text-align: left;
+	vertical-align: top;
+	/*
+	border-bottom:1px solid #ccc; 
+	border-right:1px solid #ccc;
+	*/
+}
+
+table.pets td.righttd {
+	text-align: right !important;
+}
+
+table.pets thead tr {
+	background-color: #0000a0;
+	color: #FFF;
+	padding: 2px;
+	border: 1px solid #ccc;
+}
+
+table.pets tr.odd {
+	background-color: #fff
+}
+
+table.pets tr.tableRowEven, table.pets tr.even {
+	background-color: #eef
+}
+
+.footer {
+	font-size: 80%;
+	color: #ccc;
+	margin: 10px 0;
+	padding: 10px, 0;
+	position: relative;
+	left: 4px;
+}
+
+.header {
+	font-size: 80%;
+	color: #000000;
+}
+
+#petsLogo {
+	margin-top: 0px;
+}
+
+.selectedRow {
+	background-color: #fc0;
+}
+
+.over {
+	background-color: #fc0;
+}
+
+.smallText {
+	font-size: 80%;
+}
+
+.smallTextBold {
+	font-size: 80%;
+	font-weight: bold;
+}
+
+.error {
+	font-weight: bold;
+	color: red;
+	vertical-align: top;
+	font-size: 85%
+}
+
+.notes {
+	font-weight: bold;
+	color: green;
+	font-size: 85%
+}
+
+.disabled {
+	background-color: #ddd;
+}
+
+.sectionTitle {
+	font-weight: bold;
+}
+
+.stick-to-right {
+	width: 250px;
+	float: right;
+}
+
+.padding1 {
+	padding-left: 250px;
+}
+
+.textArea {
+	resize: none;
+	width: 700px;
+	height: 70px;
+	maxlength: 999;
+}
