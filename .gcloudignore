@@ -21,4 +21,6 @@
 target/
 
 # AWS configurations
-src/main/webapp/WEB-INF/.ebextensions/
+src/main/webapp/.ebextensions/
+# Dummy appengine-web.xml
+src/main/webapp/WEB-INF/appengine-web-dummy.xml

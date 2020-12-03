@@ -8,6 +8,8 @@
 	<env-variables>
 		<env-var name="SPRING_PROFILES_ACTIVE" value="production" />
 		<env-var name="LOG_CONFIG" value="gcp" />
+		<env-var name="BASIC_AUTH_USR_PETSSERVICE" value="abc" />
+		<env-var name="BASIC_AUTH_PWD_PETSSERVICE" value="def" />
 	</env-variables>
 
 	<instance-class>F1</instance-class>

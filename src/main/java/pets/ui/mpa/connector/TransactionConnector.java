@@ -24,7 +24,7 @@ public class TransactionConnector {
 	private final String getTransactionsByUsernameUrl;
 	private final String editTransactionUrl;
 
-	public TransactionConnector(@Qualifier("restTemplate") RestTemplate restTemplate, String getTransactionByIdUrl,
+	public TransactionConnector(@Qualifier("restTemplatePetsService") RestTemplate restTemplate, String getTransactionByIdUrl,
 			String getTransactionsByUsernameUrl, String editTransactionUrl) {
 		this.restTemplate = restTemplate;
 		this.getTransactionByIdUrl = getTransactionByIdUrl;

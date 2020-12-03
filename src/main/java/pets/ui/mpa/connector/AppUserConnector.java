@@ -16,7 +16,7 @@ public class AppUserConnector {
 	private final RestTemplate restTemplate;
 	private final String getUserByUsernameUrl;
 
-	public AppUserConnector(@Qualifier("restTemplate") RestTemplate restTemplate, String getUserByUsernameUrl) {
+	public AppUserConnector(@Qualifier("restTemplatePetsService") RestTemplate restTemplate, String getUserByUsernameUrl) {
 		this.restTemplate = restTemplate;
 		this.getUserByUsernameUrl = getUserByUsernameUrl;
 	}

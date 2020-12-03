@@ -24,7 +24,7 @@ public class AccountConnector {
 	private final String getAccountsByUsernameUrl;
 	private final String editAccountUrl;
 
-	public AccountConnector(@Qualifier("restTemplate") RestTemplate restTemplate, String getAccountByIdUrl,
+	public AccountConnector(@Qualifier("restTemplatePetsService") RestTemplate restTemplate, String getAccountByIdUrl,
 			String getAccountsByUsernameUrl, String editAccountUrl) {
 		this.restTemplate = restTemplate;
 		this.getAccountByIdUrl = getAccountByIdUrl;

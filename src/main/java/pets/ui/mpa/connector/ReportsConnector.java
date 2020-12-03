@@ -18,7 +18,7 @@ public class ReportsConnector {
 	private final String getCashFlowsReportUrl;
 	private final String getCategoriesReportUrl;
 	
-	public ReportsConnector(@Qualifier("restTemplate") RestTemplate restTemplate, 
+	public ReportsConnector(@Qualifier("restTemplatePetsService") RestTemplate restTemplate, 
 			String getCurrentBalancesReportUrl, String getCashFlowsReportUrl,
 			String getCategoriesReportUrl) {
 		this.restTemplate = restTemplate;
