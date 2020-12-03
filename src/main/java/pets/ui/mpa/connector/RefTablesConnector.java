@@ -41,7 +41,7 @@ public class RefTablesConnector {
 	private final String getRefTransactionTypesUrl;
 	private final String saveNewCategoryUrl;
 
-	public RefTablesConnector(@Qualifier("restTemplate") RestTemplate restTemplate, String getRefAccountTypesUrl,
+	public RefTablesConnector(@Qualifier("restTemplatePetsService") RestTemplate restTemplate, String getRefAccountTypesUrl,
 			String getRefBanksUrl, String getRefCategoriesUrl, String getRefCategoryTypesUrl,
 			String getRefMerchantByIdUrl, String getRefMerchantsByUsernameUrl, String editMerchantUrl,
 			String getRefTransactionTypesUrl, String saveNewCategoryUrl) {

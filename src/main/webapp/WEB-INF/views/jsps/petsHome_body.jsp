@@ -21,7 +21,7 @@
 		<br>
 		<var id="LOADING_ERROR_RESPONSE"></var>
 		<br> 
-		Please try again in 30 seconds!
+		Please try again in 10 seconds!
 	</div>
 
 	<div id="LOADED" align=center style="display: none;">

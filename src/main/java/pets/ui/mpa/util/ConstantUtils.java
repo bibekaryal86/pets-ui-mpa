@@ -54,4 +54,7 @@ public class ConstantUtils {
 	public static final List<String> ACCOUNT_STATUSES = asList("ACTIVE", "CLOSED");
 	public static final List<String> ACCOUNT_TYPES_LOAN_ACCOUNTS = asList(ACCOUNT_TYPE_ID_CREDIT_CARD,
             ACCOUNT_TYPE_ID_LOANS_MORTGAGES, ACCOUNT_TYPE_ID_OTHER_LOANS);
+	
+	public static final String BASIC_AUTH_USR_PETSSERVICE = "BASIC_AUTH_USR_PETSSERVICE";
+	public static final String BASIC_AUTH_PWD_PETSSERVICE = "BASIC_AUTH_PWD_PETSSERVICE";
 }
