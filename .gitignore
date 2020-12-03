@@ -3,4 +3,4 @@
 .classpath
 .project
 target
-src/main/webapp/WEB-INF/appengine-web.xml
+/src/main/webapp/WEB-INF/appengine-web.xml
