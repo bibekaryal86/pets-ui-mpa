@@ -26,3 +26,11 @@ The .ebextensions folder in src/main/webapp contains configurations for viewing 
 To run in GCP App Engine, use the GCP plugin for easy way, the environment variables are set in the appengine-web.xml
 
 Used Eclipse instead of IntelliJ because IntelliJ community edition does not support JSP/JS 
+
+Three apps from the following repos need to be running together:
+* https://github.com/bibekaryal86/pets-database
+* https://github.com/bibekaryal86/pets-service
+* https://github.com/bibekaryal86/pets-ui-mpa
+
+Deployed to:
+* GCP: https://pets-ui-mpa.appspot.com/home.pets
