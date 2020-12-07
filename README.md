@@ -31,3 +31,6 @@ Three apps from the following repos need to be running together:
 * https://github.com/bibekaryal86/pets-database
 * https://github.com/bibekaryal86/pets-service
 * https://github.com/bibekaryal86/pets-ui-mpa
+
+Deployed to:
+* GCP: https://pets-ui-mpa.appspot.com/home.pets
